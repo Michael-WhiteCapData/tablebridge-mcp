@@ -32,11 +32,6 @@ uvx tablebridge          # run directly
 pip install tablebridge  # then run: tablebridge
 ```
 
-> 📦 The PyPI release is being finalized. Until it lands, run straight from the repo:
-> ```bash
-> uvx --from git+https://github.com/Michael-WhiteCapData/tablebridge-mcp tablebridge
-> ```
-
 ### Claude Code
 
 ```bash
