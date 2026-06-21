@@ -1,0 +1,38 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-09-29/server.schema.json",
+  "name": "io.github.Michael-WhiteCapData/tablebridge-mcp",
+  "description": "Query a folder of CSV / Parquet / JSON files with SQL — one queryable source, read-only.",
+  "repository": {
+    "url": "https://github.com/Michael-WhiteCapData/tablebridge-mcp",
+    "source": "github"
+  },
+  "version": "0.1.0",
+  "packages": [
+    {
+      "registryType": "pypi",
+      "identifier": "tablebridge",
+      "version": "0.1.0",
+      "transport": { "type": "stdio" },
+      "environmentVariables": [
+        {
+          "name": "TABLEBRIDGE_DATA_DIR",
+          "description": "Directory of data files to expose as SQL tables (sandboxed).",
+          "default": ".",
+          "isRequired": false
+        },
+        {
+          "name": "TABLEBRIDGE_MAX_ROWS",
+          "description": "Maximum rows returned per query/preview.",
+          "default": "1000",
+          "isRequired": false
+        },
+        {
+          "name": "TABLEBRIDGE_RECURSIVE",
+          "description": "Scan subdirectories too (1/0).",
+          "default": "1",
+          "isRequired": false
+        }
+      ]
+    }
+  ]
+}
