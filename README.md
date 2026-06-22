@@ -52,6 +52,16 @@ TABLEBRIDGE_DATA_DIR=/path/to/your/data claude mcp add tablebridge -- uvx tableb
 }
 ```
 
+## Run with Docker
+
+A [`Dockerfile`](Dockerfile) is included. The server speaks MCP over stdio. Mount the
+folder you want to query at `/data` (read-only is fine) and run interactively (`-i`):
+
+```bash
+docker build -t tablebridge .
+docker run --rm -i -v /path/to/your/data:/data:ro tablebridge
+```
+
 ## Tools
 
 | Tool | Description |
