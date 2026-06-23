@@ -10,4 +10,4 @@ from .config import Config
 from .db import TableBridge, TableBridgeError
 
 __all__ = ["Config", "TableBridge", "TableBridgeError", "__version__"]
-__version__ = "0.1.0"
+__version__ = "0.1.1"

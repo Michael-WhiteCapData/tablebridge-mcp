@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "tablebridge"
-version = "0.1.0"
+version = "0.1.1"
 description = "An MCP server that turns a folder of CSV / Parquet / JSON files into one SQL-queryable source for your AI agent."
 readme = "README.md"
 license = { text = "MIT" }
