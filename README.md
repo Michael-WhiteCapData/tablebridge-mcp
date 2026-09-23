@@ -32,6 +32,9 @@ uvx tablebridge          # run directly
 pip install tablebridge  # then run: tablebridge
 ```
 
+Tablebridge uses the MCP Python SDK 1.x `FastMCP` API. Its dependency range stays
+below SDK 2 until the server is migrated to that API.
+
 ### Claude Code
 
 ```bash
